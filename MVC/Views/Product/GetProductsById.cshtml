@@ -1,0 +1,13 @@
+﻿@* @model Product *@
+<table class="table table-bordered table-hover">
+
+<tr>
+    <td> @Model.Id</td>
+    <td>@Model.Name</td>
+    <td>@Model.Price</td>
+    <td>@Model.Description</td>
+    <td>
+        <img src="~/Images/@Model.Image" style="width:50px" />
+    </td>
+</tr>
+</table>

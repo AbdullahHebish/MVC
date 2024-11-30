@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Colored Page</title>
+    <style>
+        h1 {
+        color: blue;
+        }
+
+        p {
+        color: red;
+        }
+    </style>
+</head>
+<body>
+    @{
+        string name = "Abdullah";
+    }
+    <h1 style="color: green;">Hello, World! </h1>
+    <p>Hi,@name</p>
+    @for (int i = 0; i < 10; i++)
+    {
+        <li>@i</li>
+    }
+</body>
+</html>

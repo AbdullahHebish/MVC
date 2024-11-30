@@ -1,0 +1,15 @@
+﻿@* @model List<Product> *@
+<table class="table table-bordered table-hover">
+    @foreach (var i in Model)
+    {
+        <tr>
+            <td> @i.Id</td>
+            <td>@i.Name</td>
+            <td>@i.Price</td>
+            <td>@i.Description</td>
+            <td>
+                <img src="~/Images/@i.Image" style="width:80px"/>
+            </td>
+        </tr>
+    }
+</table>
